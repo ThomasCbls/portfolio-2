@@ -1,28 +1,46 @@
+import GooeyNav from "./components/navBar";
 import Particles from "./components/particules";
 import TextType from "./components/TexteType";
+import { SkillPage } from "./skillPage";
+import { DarkMode } from "./components/darkMode";
 
 export const WelcomePage = () => {
+  const items = [
+    { label: "Home", href: "#" },
+    { label: "Présentation", href: "#" },
+    { label: "Compétences", href: "#" },
+    { label: "Projets", href: "#" },
+    { label: "Contact", href: "#" },
+  ];
+
   return (
     <div
       style={{
-        width: "100%",
-        height: "100%",
         position: "relative",
         backgroundColor: "#121212",
+        width: "100vw",
+        height: "100vh",
+        overflow: "hidden",
       }}
       className="particles-container"
     >
-      <TextType
-        text={[
-          "Hello bienvenue sur cette page !",
-          "Je m'apppelle Thomas Camboulas.",
-          "Je suis développeur !",
-        ]}
-        typingSpeed={75}
-        pauseDuration={1500}
-        showCursor={true}
-        cursorCharacter="|"
-      />
+      <div
+        className="nav-wrapper"
+        style={{ alignItems: "flex-start", top: "20px" }}
+      >
+        <GooeyNav
+          items={items}
+          particleCount={15}
+          particleDistances={[90, 10]}
+          particleR={100}
+          initialActiveIndex={0}
+          animationTime={600}
+          timeVariance={300}
+          colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+        />
+        <DarkMode />
+      </div>
+
       <Particles
         particleColors={["#ffffffff", "#fafafaff"]}
         particleCount={1000}
@@ -33,6 +51,20 @@ export const WelcomePage = () => {
         alphaParticles={false}
         disableRotation={false}
       />
+      <div className="text-overlay">
+        <TextType
+          text={[
+            "Hello bienvenue sur cette page !",
+            "Je m'apppelle Thomas Camboulas.",
+            "Je suis développeur !",
+          ]}
+          typingSpeed={75}
+          pauseDuration={1500}
+          showCursor={true}
+          cursorCharacter="|"
+        />
+      </div>
+      <SkillPage />
     </div>
   );
 };
