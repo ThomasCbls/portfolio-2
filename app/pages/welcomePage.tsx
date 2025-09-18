@@ -55,18 +55,13 @@ export const WelcomePage = () => {
       />
       <div className="text-overlay">
         <TextType
-          text={[
-            "Hello bienvenue sur cette page !",
-            "Je m'apppelle Thomas Camboulas.",
-            "Je suis développeur !",
-          ]}
+          text={["Hello bienvenue sur cette page !", "phrase 2", "phrase 3"]}
           typingSpeed={75}
           pauseDuration={1500}
           showCursor={true}
           cursorCharacter="|"
         />
       </div>
-      <SkillPage />
     </div>
   );
 };

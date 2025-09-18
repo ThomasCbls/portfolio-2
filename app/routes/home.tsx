@@ -1,3 +1,4 @@
+import { MainPage } from "~/pages/mainPage";
 import { WelcomePage } from "~/pages/welcomePage";
 
 // export function meta({}: Route.MetaArgs) {
@@ -5,5 +6,5 @@ import { WelcomePage } from "~/pages/welcomePage";
 // }
 
 export default function Home() {
-  return <WelcomePage />;
+  return <MainPage />;
 }
