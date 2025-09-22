@@ -7,25 +7,30 @@ import {
   Banana,
   Bolt,
   Github,
+  Icon,
 } from "lucide-react";
 
-import { Icons } from "~/components/icons/icons";
 import { cn } from "~/lib/utils";
+import SvgComponent from "~/pages/svg/svgTypeScript";
+import SvgVsCode from "~/pages/svg/svgVscode";
 
 export const CenterIcon = (
-  <Icons.logo
-    className="center z-0 h-32 w-32 animate-float rounded-full bg-gradient-to-r from-purple-400 to-blue-400 shadow-lg"
-    style={{
-      boxShadow: "0 0 20px 10px rgba(128, 90, 213, 0.6)",
-    }}
-  />
+  // <Icon
+  //   className="center z-0 h-32 w-32 animate-float rounded-full bg-gradient-to-r from-purple-400 to-blue-400 shadow-lg"
+  //   style={{
+  //     boxShadow: "0 0 20px 10px rgba(128, 90, 213, 0.6)",
+  //   }}
+  // />
+  <SvgVsCode />
 );
+
 export const LucideIcons = [
-  <Banana key="banana" className="h-12 w-12" />,
-  <Bolt key="bolt" className="h-12 w-12" />,
-  <BadgeX key="badge-x" className="h-12 w-12" />,
-  <BadgeCent key="badge-cent" className="h-12 w-12" />,
-  <Github key="github" className="h-12 w-12" />,
+  <SvgComponent />,
+  // <Banana key="banana" className="h-12 w-12" />,
+  // <Bolt key="bolt" className="h-12 w-12" />,
+  // <BadgeX key="badge-x" className="h-12 w-12" />,
+  // <BadgeCent key="badge-cent" className="h-12 w-12" />,
+  // <Github key="github" className="h-12 w-12" />,
 ];
 
 interface OrbitingItems3DProps {
