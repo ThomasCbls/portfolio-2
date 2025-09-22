@@ -21,7 +21,11 @@ import SvgReact from "./svg/svgReact";
 import SvgPhp from "./svg/svgPhp";
 import SvgGitLab from "./svg/svgGitlab";
 
-export const SkillPage = () => {
+export function loader() {
+  return null;
+}
+
+export default function SkillPage() {
   return (
     <section className="skill-page">
       <div className="relative flex h-[500px] w-full flex-col items-center justify-center">
@@ -47,4 +51,4 @@ export const SkillPage = () => {
       />
     </section>
   );
-};
+}

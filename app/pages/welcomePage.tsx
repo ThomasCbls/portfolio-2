@@ -1,7 +1,6 @@
 import GooeyNav from "./components/navBar";
 import Particles from "./components/particules";
 import TextType from "./components/TexteType";
-import { SkillPage } from "./skillPage";
 import { DarkMode } from "./components/darkMode";
 import { SmoothCursor } from "~/components/ui/smooth-cursor";
 
@@ -9,7 +8,7 @@ export const WelcomePage = () => {
   const items = [
     { label: "Home", href: "#" },
     { label: "Présentation", href: "#" },
-    { label: "Compétences", href: "#" },
+    { label: "Compétences", href: "/competence" },
     { label: "Projets", href: "#" },
     { label: "Contact", href: "#" },
   ];
