@@ -7,6 +7,20 @@
   font-weight: bold;
 }
 
+.text-skill {
+  position: absolute;
+  top: 150px;
+  z-index: 1;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.div-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-type__cursor {
   display: flex;
   justify-content: center;
@@ -283,7 +297,7 @@
 
 .skill-orbiting {
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 1;
   color: white;
   overflow: visible;
 }

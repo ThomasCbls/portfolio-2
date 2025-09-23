@@ -3,10 +3,12 @@ import Particles from "./components/particules";
 import TextType from "./components/TexteType";
 import { DarkMode } from "./components/darkMode";
 import { SmoothCursor } from "~/components/ui/smooth-cursor";
+import { Outlet } from "react-router";
+import { color } from "framer-motion";
 
 export const WelcomePage = () => {
   const items = [
-    { label: "Home", href: "#" },
+    { label: "Home", href: "/" },
     { label: "Présentation", href: "#" },
     { label: "Compétences", href: "/competence" },
     { label: "Projets", href: "#" },
@@ -39,9 +41,8 @@ export const WelcomePage = () => {
           timeVariance={300}
           colors={[1, 2, 3, 1, 2, 3, 1, 4]}
         />
-        <DarkMode />
+        {/* <DarkMode /> */}
       </div>
-
       <Particles
         particleColors={["#ffffffff", "#fafafaff"]}
         particleCount={1000}
@@ -54,7 +55,11 @@ export const WelcomePage = () => {
       />
       <div className="text-overlay">
         <TextType
-          text={["Hello bienvenue sur cette page !", "phrase 2", "phrase 3"]}
+          text={[
+            "Hello bienvenue sur cette page !",
+            "Je m'appelle Thomas Camboulas",
+            "Je suis développeur !",
+          ]}
           typingSpeed={75}
           pauseDuration={1500}
           showCursor={true}

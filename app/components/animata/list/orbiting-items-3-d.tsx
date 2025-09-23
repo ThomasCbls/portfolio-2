@@ -149,12 +149,12 @@ export default function OrbitingItems3D({
         containerClassName
       )}
     >
-      <div
+      {/* <div
         className={cn(
           "absolute inset-0 -z-10 h-full w-full items-center bg-gradient-to-r from-violet-200 to-pink-200",
           backgroundClassName
         )}
-      />
+      /> */}
       <div
         className={cn(
           "relative flex h-64 w-64 items-center justify-center ease-linear repeat-infinite",
