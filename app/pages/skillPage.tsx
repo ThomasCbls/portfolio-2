@@ -32,7 +32,7 @@ export function loader() {
 export default function SkillPage() {
   const items = [
     { label: "Home", href: "/" },
-    { label: "Présentation", href: "#" },
+    { label: "Présentation", href: "/presentation" },
     { label: "Compétences", href: "/competence" },
     { label: "Projets", href: "#" },
     { label: "Contact", href: "#" },
@@ -57,7 +57,7 @@ export default function SkillPage() {
           particleCount={15}
           particleDistances={[90, 10]}
           particleR={100}
-          initialActiveIndex={0}
+          initialActiveIndex={2}
           animationTime={600}
           timeVariance={300}
           colors={[1, 2, 3, 1, 2, 3, 1, 4]}

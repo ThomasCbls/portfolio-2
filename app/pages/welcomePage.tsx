@@ -9,7 +9,7 @@ import { color } from "framer-motion";
 export const WelcomePage = () => {
   const items = [
     { label: "Home", href: "/" },
-    { label: "Présentation", href: "#" },
+    { label: "Présentation", href: "/presentation" },
     { label: "Compétences", href: "/competence" },
     { label: "Projets", href: "#" },
     { label: "Contact", href: "#" },
