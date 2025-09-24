@@ -1,10 +1,7 @@
 import GooeyNav from "./components/navBar";
 import Particles from "./components/particules";
 import TextType from "./components/TexteType";
-import { DarkMode } from "./components/darkMode";
 import { SmoothCursor } from "~/components/ui/smooth-cursor";
-import { Outlet } from "react-router";
-import { color } from "framer-motion";
 
 export const WelcomePage = () => {
   const items = [
@@ -41,7 +38,6 @@ export const WelcomePage = () => {
           timeVariance={300}
           colors={[1, 2, 3, 1, 2, 3, 1, 4]}
         />
-        {/* <DarkMode /> */}
       </div>
       <Particles
         particleColors={["#ffffffff", "#fafafaff"]}

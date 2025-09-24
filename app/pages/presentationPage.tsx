@@ -17,6 +17,7 @@ export default function SkillPage() {
     { label: "Projets", href: "#" },
     { label: "Contact", href: "#" },
   ];
+
   const data = [
     {
       time: "2025",
@@ -91,15 +92,16 @@ export default function SkillPage() {
         />
       </div>
       <div className="text-overlay">
-        {/* <LetterGlitch
-          glitchSpeed={50}
-          //   glitchColors={[]}
-          centerVignette={true}
-          outerVignette={false}
-          smooth={true}
-          //   characters="gbreregq"
-        /> */}
-        <ArcTimeline data={data} />;
+        <ArcTimeline
+          data={data}
+          defaultActiveStep={{ stepIndex: 0 }}
+          arcConfig={{
+            circleWidth: 3000,
+            angleBetweenMinorSteps: 0.5,
+            lineCountFillBetweenSteps: 10,
+            boundaryPlaceholderLinesCount: 75,
+          }}
+        />{" "}
       </div>
     </div>
   );
